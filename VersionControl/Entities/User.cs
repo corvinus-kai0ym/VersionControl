@@ -19,5 +19,7 @@ namespace VersionControl.Entities
                     FirstName);
             }
         }
+
+        public Bind
     }
 }
