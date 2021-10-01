@@ -22,6 +22,7 @@ namespace VersionControl
             lblLastName.Text = Resource.FullName;
             btnAdd.Text = Resource.Add;
             btnWrite.Text = Resource.Write;
+            btnDelete.Text = Resource.Delete;
 
             // listbox1
             listUsers.DataSource = users;
@@ -47,6 +48,14 @@ namespace VersionControl
                     sw.Write(u.ID+"-"+ u.FullName);
                     sw.WriteLine();
                 }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+                var t = listUsers.SelectedItem;
+                if (t != null)
+                    users.Remove((User)t);
+            
         }
     }
 }

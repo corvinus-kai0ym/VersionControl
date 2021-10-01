@@ -70,7 +70,16 @@ namespace VersionControl {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kersztnév.
+        ///   Looks up a localized string similar to Törlés.
+        /// </summary>
+        internal static string Delete {
+            get {
+                return ResourceManager.GetString("Delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vezetéknév.
         /// </summary>
         internal static string FullName {
             get {
