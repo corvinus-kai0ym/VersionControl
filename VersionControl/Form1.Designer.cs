@@ -35,6 +35,7 @@ namespace VersionControl
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.listUsers = new System.Windows.Forms.ListBox();
+            this.btnWrite = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAdd
@@ -87,11 +88,22 @@ namespace VersionControl
             this.listUsers.Size = new System.Drawing.Size(226, 319);
             this.listUsers.TabIndex = 6;
             // 
+            // btnWrite
+            // 
+            this.btnWrite.Location = new System.Drawing.Point(288, 188);
+            this.btnWrite.Name = "btnWrite";
+            this.btnWrite.Size = new System.Drawing.Size(253, 36);
+            this.btnWrite.TabIndex = 12;
+            this.btnWrite.Text = "button2";
+            this.btnWrite.UseVisualStyleBackColor = true;
+            this.btnWrite.Click += new System.EventHandler(this.btnWrite_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(574, 365);
+            this.Controls.Add(this.btnWrite);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lblFirstName);
             this.Controls.Add(this.lblLastName);
@@ -114,6 +126,7 @@ namespace VersionControl
         private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.ListBox listUsers;
         private System.Windows.Forms.TextBox txtFirstName;
+        private System.Windows.Forms.Button btnWrite;
     }
 }
 
