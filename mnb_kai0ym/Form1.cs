@@ -15,12 +15,18 @@ namespace mnb_kai0ym
 {
     public partial class Form1 : Form
     {
-        private BindingList<RateData>Rates; 
+        BindingList<RateData> Rates = new BindingList<RateData>();
+        BindingList<string> Currencies = new BindingList<string>();
         public Form1()
         {
             InitializeComponent();
             
                 Rates = new BindingList<RateData>();
+            processXml();
+            dataGridView1.DataSource = Rates;
+            //chartRateData.DataSource = Rates;
+            comboBox1.DataSource = Currencies;
+            refreshData();
         }
 
         void createList()
@@ -91,5 +97,32 @@ namespace mnb_kai0ym
             //chartArea.AxisY.MajorGrid.Enabled = false;
             //chartArea.AxisY.IsStartedFromZero = false;
         }
+
+        private string GetCurrencies()
+        {
+            var mnbService = new MNBArfolyamServiceSoapClient();
+            var request = new GetCurrenciesRequestBody();
+            //var response = mnbService.GetCurrencies(request);
+            //var result = response.GetCurrenciesResult;
+            var result = "";
+            return result;
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            refreshData();
+        }
+
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        {
+            refreshData();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            refreshData();
+        }
+
+        
     }
 }
