@@ -36,6 +36,9 @@ namespace porductionLine_kai0ym
             this.btnSelectCar = new System.Windows.Forms.Button();
             this.btnSelectBall = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.process1 = new System.Diagnostics.Process();
+            this.colorPicker = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.mainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,6 +48,8 @@ namespace porductionLine_kai0ym
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.mainPanel.AutoSize = true;
+            this.mainPanel.Controls.Add(this.button1);
+            this.mainPanel.Controls.Add(this.colorPicker);
             this.mainPanel.Controls.Add(this.label1);
             this.mainPanel.Controls.Add(this.btnSelectBall);
             this.mainPanel.Controls.Add(this.btnSelectCar);
@@ -52,6 +57,7 @@ namespace porductionLine_kai0ym
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(801, 426);
             this.mainPanel.TabIndex = 0;
+            this.mainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPanel_Paint);
             // 
             // createTimer
             // 
@@ -90,6 +96,36 @@ namespace porductionLine_kai0ym
             this.label1.TabIndex = 2;
             this.label1.Text = "Coming next:";
             // 
+            // process1
+            // 
+            this.process1.StartInfo.Domain = "";
+            this.process1.StartInfo.LoadUserProfile = false;
+            this.process1.StartInfo.Password = null;
+            this.process1.StartInfo.StandardErrorEncoding = null;
+            this.process1.StartInfo.StandardInputEncoding = null;
+            this.process1.StartInfo.StandardOutputEncoding = null;
+            this.process1.StartInfo.UserName = "";
+            this.process1.SynchronizingObject = this;
+            // 
+            // colorPicker
+            // 
+            this.colorPicker.Location = new System.Drawing.Point(277, 32);
+            this.colorPicker.Name = "colorPicker";
+            this.colorPicker.Size = new System.Drawing.Size(75, 23);
+            this.colorPicker.TabIndex = 3;
+            this.colorPicker.Text = "button1";
+            this.colorPicker.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(537, 31);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btnColor_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -113,6 +149,9 @@ namespace porductionLine_kai0ym
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSelectBall;
         private System.Windows.Forms.Button btnSelectCar;
+        private System.Windows.Forms.Button colorPicker;
+        private System.Diagnostics.Process process1;
+        private System.Windows.Forms.Button button1;
     }
 }
 
