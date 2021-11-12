@@ -30,12 +30,45 @@ namespace porductionLine_kai0ym
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.mainPanel = new System.Windows.Forms.Panel();
+            this.createTimer = new System.Windows.Forms.Timer(this.components);
+            this.conveyorTimer = new System.Windows.Forms.Timer(this.components);
+            this.SuspendLayout();
+            // 
+            // mainPanel
+            // 
+            this.mainPanel.AutoSize = true;
+            this.mainPanel.Location = new System.Drawing.Point(0, 12);
+            this.mainPanel.Name = "mainPanel";
+            this.mainPanel.Size = new System.Drawing.Size(801, 100);
+            this.mainPanel.TabIndex = 0;
+            // 
+            // createTimer
+            // 
+            this.createTimer.Interval = 3000;
+            // 
+            // conveyorTimer
+            // 
+            this.conveyorTimer.Interval = 10;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.mainPanel);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel mainPanel;
+        private System.Windows.Forms.Timer createTimer;
+        private System.Windows.Forms.Timer conveyorTimer;
     }
 }
 
