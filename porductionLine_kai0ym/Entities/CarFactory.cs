@@ -5,13 +5,11 @@ using System.Text;
 
 namespace porductionLine_kai0ym.Entities
 {
-    class BallFactory:IToyFactory
+    class CarFactory : IToyFactory
     {
         public Toy CreateNew()
         {
-            return new Ball();
+            return new Car();
         }
-
-        
     }
 }
