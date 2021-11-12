@@ -7,8 +7,18 @@ using System.Windows.Forms;
 
 namespace porductionLine_kai0ym.Entities
 {
-    class Toy: Abstractions.Toy
+    class Ball: Abstractions.Toy
     {
+        public SolidBrush BallColor { get; private set; }
+
+        public Ball(Color color)
+        {
+            BallColor = new SolidBrush(color);
+        }
+
+        public Ball()
+        {
+        }
 
         protected override void DrawImage(Graphics g)
         {
