@@ -6,7 +6,7 @@ using System.Text;
 
 namespace porductionLine_kai0ym.Entities
 {
-    class Car : Toy
+    class Car : Abstractions.Toy
     {
         protected override void DrawImage(Graphics g)
         {

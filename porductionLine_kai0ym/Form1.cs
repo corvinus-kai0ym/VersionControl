@@ -1,4 +1,5 @@
-﻿using porductionLine_kai0ym.Entities;
+﻿using porductionLine_kai0ym.Abstractions;
+using porductionLine_kai0ym.Entities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,13 +14,17 @@ namespace porductionLine_kai0ym
 {
     public partial class Form1 : Form
     {
-        private List<Ball> _balls = new List<Ball>;
+        private List<Abstractions.Toy> _toys = new List<Abstractions.Toy>();
 
-        private BallFactory _factory;
-        public BallFactory Factory
+        public Form1(List<Abstractions.Toy> toys)
+        {
+            _toys = toys;
+        }
+        private IToyFactory _factory;
+        public IToyFactory Factory
         {
             get { return _factory; }
-            set { _factory = value;}
+            set { _factory = value; }
         }
 
         public Form1()
@@ -29,29 +34,36 @@ namespace porductionLine_kai0ym
 
         }
 
-        private void createTimer_Tick (object sender, EventArgs e)
+        private void createTimer_Tick(object sender, EventArgs e)
         {
-            var ball = Factory.CreateNew();
-            _balls.Add(ball);
-            ball.Left = -ball.Width;
-            mainPanel.Controls.Add(ball);
+            var toy = Factory.CreateNew();
+            _toys.Add(toy);
+            toy.Left = -toy.Width;
+            mainPanel.Controls.Add(toy);
         }
 
         private void conveyorTimer_Tick(object sender, EventArgs e)
         {
             var maxPosition = 0;
-            foreach (var ball in _balls)
+            foreach (var toy in _toys)
             {
-                ball.MoveBall();
-                if (ball.Left > maxPosition)
-                    maxPosition = ball.Left;
+                toy.MoveToy();
+                if (toy.Left > maxPosition)
+                    maxPosition = toy.Left;
             }
 
             if (maxPosition > 1000)
             {
-                var oldestBall = _balls[0];
-                mainPanel.Controls.Remove(oldestBall);
-                _balls.Remove(oldestBall);
+                var oldestToy = _toys[0];
+                mainPanel.Controls.Remove(oldestToy);
+                _toys.Remove(oldestToy);
             }
         }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Form1 form &&
+                   EqualityComparer<List<Abstractions.Toy>>.Default.Equals(_toys, form._toys);
+        }
+    }
 }

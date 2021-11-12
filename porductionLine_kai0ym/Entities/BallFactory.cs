@@ -7,9 +7,9 @@ namespace porductionLine_kai0ym.Entities
 {
     class BallFactory:IToyFactory
     {
-        public Toy CreateNew()
+        public Abstractions.Toy CreateNew()
         {
-            return new Ball();
+            return new Toy();
         }
 
         

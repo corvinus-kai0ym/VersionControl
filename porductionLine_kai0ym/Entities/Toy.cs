@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace porductionLine_kai0ym.Entities
 {
-    class Ball:Toy
+    class Toy: Abstractions.Toy
     {
 
         protected override void DrawImage(Graphics g)
