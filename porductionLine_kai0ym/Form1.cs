@@ -14,6 +14,7 @@ namespace porductionLine_kai0ym
 {
     public partial class Form1 : Form
     {
+        private Toy _nextToy;
         private List<Abstractions.Toy> _toys = new List<Abstractions.Toy>();
 
         public Form1(List<Abstractions.Toy> toys)
@@ -24,7 +25,9 @@ namespace porductionLine_kai0ym
         public IToyFactory Factory
         {
             get { return _factory; }
-            set { _factory = value; }
+            set { _factory = value;
+                DisplayNext();
+            }
         }
 
         public Form1()
@@ -64,6 +67,26 @@ namespace porductionLine_kai0ym
         {
             return obj is Form1 form &&
                    EqualityComparer<List<Abstractions.Toy>>.Default.Equals(_toys, form._toys);
+        }
+
+        private void btnSelectCar_Click(object sender, EventArgs e)
+        {
+            Factory = new CarFactory();
+        }
+
+        private void DisplayNext()
+        {
+            if (_nextToy != null)
+                Controls.Remove(_nextToy);
+            _nextToy = Factory.CreateNew();
+            _nextToy.Top = lblNext.Top + lblNext.Height + 20;
+            _nextToy.Left = lblNext.Left;
+            Controls.Add(_nextToy);
+        }
+
+        private void btnSelectBall_Click(object sender, EventArgs e)
+        {
+            Factory = new BallFactory();
         }
     }
 }
