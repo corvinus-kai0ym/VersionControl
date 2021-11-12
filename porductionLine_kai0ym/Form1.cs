@@ -90,7 +90,7 @@ namespace porductionLine_kai0ym
 
             Factory = new BallFactory
             {
-                BallColor = btnBallColor.BackColor
+                BallColor = button1.BackColor
             };
         }
 
