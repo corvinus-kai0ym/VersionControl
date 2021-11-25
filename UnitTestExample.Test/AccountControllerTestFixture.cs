@@ -15,8 +15,6 @@ namespace UnitTestExample.Test
     TestCase("princess@gmail", false),
     TestCase("princess.gmail.com", false),
     TestCase("princess@gmail.com", true)
-
-
             ]
         public void TestValidateEmail(string email, bool expectedResult)
         {
@@ -29,9 +27,6 @@ namespace UnitTestExample.Test
 
             // Assert
             Assert.AreEqual(expectedResult, actualResult);
-
-
-
 
         }
 
