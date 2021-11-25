@@ -7,9 +7,9 @@
             return new Ball();
         }
 
-        public Toy CreateNew()
-        {
-            return new Ball(BallColor);
-        }
+        //public Toy CreateNew()
+        //{
+        //    return new Ball(BallColor);
+        //}
     }
 }

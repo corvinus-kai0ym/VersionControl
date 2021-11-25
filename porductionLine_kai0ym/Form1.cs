@@ -25,7 +25,9 @@ namespace porductionLine_kai0ym
         public IToyFactory Factory
         {
             get { return _factory; }
-            set { _factory = value;
+            set
+            {
+                _factory = value;
                 DisplayNext();
             }
         }

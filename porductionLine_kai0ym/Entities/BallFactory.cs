@@ -14,10 +14,10 @@ namespace porductionLine_kai0ym.Entities
         }
         public Color BallColor { get; set; }
 
-        public Toy CreateNew()
-        {
-            return new Ball(BallColor);
-        }
+        //public Toy CreateNew()
+        //{
+        //    return new Ball(BallColor);
+        //}
 
 
     }
