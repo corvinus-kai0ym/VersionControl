@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VersionControl", "VersionCo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mnb_kai0ym", "mnb_kai0ym\mnb_kai0ym.csproj", "{A9440660-CDB1-4409-92CD-F5BCDB9D7D16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "porductionLine_kai0ym", "porductionLine_kai0ym\porductionLine_kai0ym.csproj", "{0DB8059F-AF0D-4A9C-9063-17238CDF3670}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "porductionLine_kai0ym", "porductionLine_kai0ym\porductionLine_kai0ym.csproj", "{0DB8059F-AF0D-4A9C-9063-17238CDF3670}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestExample", "..\..\..\Downloads\UnitTestExample\UnitTestExample\UnitTestExample.csproj", "{F1FBDBB6-FEBA-421B-A647-484ED380E500}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{0DB8059F-AF0D-4A9C-9063-17238CDF3670}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DB8059F-AF0D-4A9C-9063-17238CDF3670}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DB8059F-AF0D-4A9C-9063-17238CDF3670}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1FBDBB6-FEBA-421B-A647-484ED380E500}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1FBDBB6-FEBA-421B-A647-484ED380E500}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1FBDBB6-FEBA-421B-A647-484ED380E500}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1FBDBB6-FEBA-421B-A647-484ED380E500}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
