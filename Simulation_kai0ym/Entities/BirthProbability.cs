@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Simulation_kai0ym.Entities
 {
-    class BirthProbability
+    public class BirthProbability
     {
 
         public int Age { get; set; }
