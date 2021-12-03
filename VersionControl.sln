@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestExample", "..\..\..
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestExample.Test", "UnitTestExample.Test\UnitTestExample.Test.csproj", "{8E6F37F4-86FE-4CB8-97AE-864537AE2EDA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simulation_kai0ym", "Simulation_kai0ym\Simulation_kai0ym.csproj", "{5355D599-1715-4BFC-A60E-D8314FC5B99F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{8E6F37F4-86FE-4CB8-97AE-864537AE2EDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E6F37F4-86FE-4CB8-97AE-864537AE2EDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E6F37F4-86FE-4CB8-97AE-864537AE2EDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5355D599-1715-4BFC-A60E-D8314FC5B99F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5355D599-1715-4BFC-A60E-D8314FC5B99F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5355D599-1715-4BFC-A60E-D8314FC5B99F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5355D599-1715-4BFC-A60E-D8314FC5B99F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
