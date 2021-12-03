@@ -155,7 +155,7 @@ namespace Simulation_kai0ym
             for (int year = 2005; year <= numericUpDown1.Value; year++)
             {
                 int i = 0;
-                string v = "Szimulációs év:{year}\n\t Fiúk:{MaleNr[i]}\n\t Lányok:{FemaleNr[i]}\n";
+                string v = "Szimulációs év:" +year+ "\n\t Fiúk:" +MaleNr[i] +"\n\t Lányok:" +FemaleNr[i] +"\n";
                 richTextBox1.Text += v;
                 i++;
             }
