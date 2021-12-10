@@ -13,7 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestExample", "..\..\..
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestExample.Test", "UnitTestExample.Test\UnitTestExample.Test.csproj", "{8E6F37F4-86FE-4CB8-97AE-864537AE2EDA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simulation_kai0ym", "Simulation_kai0ym\Simulation_kai0ym.csproj", "{5355D599-1715-4BFC-A60E-D8314FC5B99F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Simulation_kai0ym", "Simulation_kai0ym\Simulation_kai0ym.csproj", "{5355D599-1715-4BFC-A60E-D8314FC5B99F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameLearning", "GameLearning\GameLearning.csproj", "{4F82F0BF-6BA4-457D-B224-8D3B46AAEE6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{5355D599-1715-4BFC-A60E-D8314FC5B99F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5355D599-1715-4BFC-A60E-D8314FC5B99F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5355D599-1715-4BFC-A60E-D8314FC5B99F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F82F0BF-6BA4-457D-B224-8D3B46AAEE6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F82F0BF-6BA4-457D-B224-8D3B46AAEE6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F82F0BF-6BA4-457D-B224-8D3B46AAEE6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F82F0BF-6BA4-457D-B224-8D3B46AAEE6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
