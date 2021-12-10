@@ -6,4 +6,10 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="WorldsHardestGame">
+      <HintPath>libs\WorldsHardestGame.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
